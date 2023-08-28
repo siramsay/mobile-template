@@ -36,4 +36,26 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #0e0e0e;
+}
+
+article {
+  width: 375px;
+  height: 812px;
+  background-color: white;
+}
+iframe {
+  border: 0 solid;
+  /*overflow: auto;*/
+
+  scrollbar-width: none;
+}
+iframe html {
+  border: 0 solid;
+  /*overflow: auto;*/
+  scrollbar-width: none;
+}
+iframe::-webkit-scrollbar {
+  /* This is the magic bit for WebKit */
+  display: none;
 }
